@@ -1,0 +1,57 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : sw_control.vf
+// /___/   /\     Timestamp : 12/13/2021 15:57:42
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "E:/Xilinx Project/FPGA_SENSOR/sw_control.vf" -w "E:/Xilinx Project/Car_sensor/sw_control.sch"
+//Design Name: sw_control
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module sw_control(A, 
+                  B, 
+                  clk, 
+                  SW_out);
+
+    input A;
+    input B;
+    input clk;
+   output SW_out;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_6;
+   wire XLXN_9;
+   
+   INV  XLXI_1 (.I(A), 
+               .O(XLXN_1));
+   INV  XLXI_2 (.I(XLXN_9), 
+               .O(XLXN_2));
+   INV  XLXI_3 (.I(XLXN_6), 
+               .O(XLXN_3));
+   INV  XLXI_4 (.I(B), 
+               .O(XLXN_4));
+   OR2  XLXI_5 (.I0(XLXN_2), 
+               .I1(XLXN_1), 
+               .O(XLXN_6));
+   OR2  XLXI_6 (.I0(XLXN_4), 
+               .I1(XLXN_3), 
+               .O(XLXN_9));
+   NAND2  XLXI_7 (.I0(XLXN_6), 
+                 .I1(clk), 
+                 .O(SW_out));
+endmodule

@@ -1,0 +1,71 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SWW.vf
+// /___/   /\     Timestamp : 12/07/2021 17:33:02
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "E:/Xilinx Project/fpga_test/SWW.vf" -w "E:/Xilinx Project/fpga_test/SWW.sch"
+//Design Name: SWW
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_SWW(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module SWW(P45, 
+           O);
+
+    input P45;
+   output O;
+   
+   wire XLXN_67;
+   wire XLXN_69;
+   wire XLXN_71;
+   wire XLXN_72;
+   
+   (* HU_SET = "XLXI_18_1" *) 
+   FTC_HXILINX_SWW  XLXI_18 (.C(P45), 
+                            .CLR(XLXN_72), 
+                            .T(XLXN_69), 
+                            .Q(O));
+   VCC  XLXI_20 (.P(XLXN_67));
+   AND2  XLXI_21 (.I0(XLXN_67), 
+                 .I1(XLXN_67), 
+                 .O(XLXN_69));
+   GND  XLXI_22 (.G(XLXN_71));
+   AND2  XLXI_23 (.I0(XLXN_71), 
+                 .I1(XLXN_71), 
+                 .O(XLXN_72));
+endmodule

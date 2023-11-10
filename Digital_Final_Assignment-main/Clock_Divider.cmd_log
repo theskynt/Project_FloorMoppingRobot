@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym Clock_Divider {E:/Xilinx Project/Lab7/Clock_Divider.sch} {E:/Xilinx Project/fpga_test/Clock_Divider.sym} 

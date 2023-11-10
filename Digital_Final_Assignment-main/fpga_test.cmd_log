@@ -1,0 +1,512 @@
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpga_test.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpga_test.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf fpga_test.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpga_test.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf fpga_test.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+sch2sym -intstyle ise -family spartan6 -refsym fpga_test {E:/Xilinx Project/fpga_test/fpga_test.sch} {E:/Xilinx Project/fpga_test/fpga_test.sym} 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/fpga_test/fpga_test.xst" -ofn "E:/Xilinx Project/fpga_test/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+sch2sym -intstyle ise -family spartan6 -refsym fpga_test {E:/Xilinx Project/FPGA_SENSOR/fpga_test.sch} {E:/Xilinx Project/FPGA_SENSOR/fpga_test.sym} 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 
+xst -intstyle ise -ifn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.xst" -ofn "E:/Xilinx Project/FPGA_SENSOR/fpga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pin.ucf -p xc6slx9-tqg144-3 "fpga_test.ngc" fpga_test.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -power off -o fpga_test_map.ncd fpga_test.ngd fpga_test.pcf 
+par -w -intstyle ise -ol high -smartguide "E:/Xilinx Project/FPGA_SENSOR/fpga_test_guide.ncd" -mt off fpga_test_map.ncd fpga_test.ncd fpga_test.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga_test.twx fpga_test.ncd -o fpga_test.twr fpga_test.pcf -ucf pin.ucf 
+bitgen -intstyle ise -f fpga_test.ut fpga_test.ncd 

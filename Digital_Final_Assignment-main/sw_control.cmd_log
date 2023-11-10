@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym sw_control {E:/Xilinx Project/Car_sensor/sw_control.sch} {E:/Xilinx Project/FPGA_SENSOR/sw_control.sym} 

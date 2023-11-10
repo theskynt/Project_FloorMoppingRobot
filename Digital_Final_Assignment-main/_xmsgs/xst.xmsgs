@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">473</arg>: Output port &lt;<arg fmt="%s" index="3">CLK_TEST</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">473</arg>: Output port &lt;<arg fmt="%s" index="3">CLK_1Hz</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">473</arg>: Output port &lt;<arg fmt="%s" index="3">CLK_2Hz</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">473</arg>: Output port &lt;<arg fmt="%s" index="3">CLK_500Hz</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">269</arg>: Output port &lt;<arg fmt="%s" index="3">D1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">269</arg>: Output port &lt;<arg fmt="%s" index="3">D2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">274</arg>: Output port &lt;<arg fmt="%s" index="3">D1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">274</arg>: Output port &lt;<arg fmt="%s" index="3">D2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">282</arg>: Output port &lt;<arg fmt="%s" index="3">D1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_18</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">282</arg>: Output port &lt;<arg fmt="%s" index="3">D2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_18</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">290</arg>: Output port &lt;<arg fmt="%s" index="3">D1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_20</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">290</arg>: Output port &lt;<arg fmt="%s" index="3">D2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_20</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">298</arg>: Output port &lt;<arg fmt="%s" index="3">D1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_26</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">298</arg>: Output port &lt;<arg fmt="%s" index="3">D2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_26</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">306</arg>: Output port &lt;<arg fmt="%s" index="3">D1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_28</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">306</arg>: Output port &lt;<arg fmt="%s" index="3">D2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_28</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">317</arg>: Output port &lt;<arg fmt="%s" index="3">D1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_39</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">E:\Xilinx Project\FPGA_SENSOR\fpga_test.vf</arg>&quot; line <arg fmt="%s" index="2">317</arg>: Output port &lt;<arg fmt="%s" index="3">D2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_39</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

@@ -1,0 +1,48 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Counter0to3.vf
+// /___/   /\     Timestamp : 12/09/2021 17:18:56
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "E:/Xilinx Project/FPGA_SENSOR/Counter0to3.vf" -w "E:/Xilinx Project/Lab7/Counter0to3.sch"
+//Design Name: Counter0to3
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Counter0to3(CLK_IN, 
+                   Y0, 
+                   Y1);
+
+    input CLK_IN;
+   output Y0;
+   output Y1;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   wire Y0_DUMMY;
+   wire Y1_DUMMY;
+   
+   assign Y0 = Y0_DUMMY;
+   assign Y1 = Y1_DUMMY;
+   FD #( .INIT(1'b0) ) XLXI_2 (.C(CLK_IN), 
+              .D(XLXN_3), 
+              .Q(Y0_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_3 (.C(XLXN_3), 
+              .D(XLXN_4), 
+              .Q(Y1_DUMMY));
+   INV  XLXI_4 (.I(Y0_DUMMY), 
+               .O(XLXN_3));
+   INV  XLXI_5 (.I(Y1_DUMMY), 
+               .O(XLXN_4));
+endmodule

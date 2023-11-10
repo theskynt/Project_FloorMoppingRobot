@@ -1,0 +1,170 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Counter1to6.vf
+// /___/   /\     Timestamp : 12/07/2021 17:12:24
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "E:/Xilinx Project/fpga_test/Counter1to6.vf" -w "E:/Xilinx Project/Lab6/Counter1to6.sch"
+//Design Name: Counter1to6
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_Counter1to6(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Counter1to6(Clear, 
+                   CLK_IN, 
+                   D0, 
+                   D1, 
+                   D2, 
+                   D3);
+
+    input Clear;
+    input CLK_IN;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   
+   wire Clearasdasd;
+   wire XLXN_59;
+   wire XLXN_61;
+   wire XLXN_62;
+   wire XLXN_63;
+   wire XLXN_72;
+   wire XLXN_73;
+   wire XLXN_74;
+   wire XLXN_84;
+   wire XLXN_86;
+   wire XLXN_88;
+   wire XLXN_90;
+   wire XLXN_95;
+   wire XLXN_96;
+   wire XLXN_121;
+   wire XLXN_156;
+   wire D0_DUMMY;
+   wire D1_DUMMY;
+   wire D2_DUMMY;
+   wire D3_DUMMY;
+   
+   assign D0 = D0_DUMMY;
+   assign D1 = D1_DUMMY;
+   assign D2 = D2_DUMMY;
+   assign D3 = D3_DUMMY;
+   (* HU_SET = "XLXI_1_2" *) 
+   FJKC_HXILINX_Counter1to6  XLXI_1 (.C(CLK_IN), 
+                                    .CLR(Clearasdasd), 
+                                    .J(XLXN_63), 
+                                    .K(XLXN_59), 
+                                    .Q(D0_DUMMY));
+   (* HU_SET = "XLXI_2_3" *) 
+   FJKC_HXILINX_Counter1to6  XLXI_2 (.C(CLK_IN), 
+                                    .CLR(Clearasdasd), 
+                                    .J(XLXN_74), 
+                                    .K(XLXN_84), 
+                                    .Q(D1_DUMMY));
+   (* HU_SET = "XLXI_3_0" *) 
+   FJKC_HXILINX_Counter1to6  XLXI_3 (.C(CLK_IN), 
+                                    .CLR(Clearasdasd), 
+                                    .J(XLXN_121), 
+                                    .K(XLXN_88), 
+                                    .Q(D2_DUMMY));
+   (* HU_SET = "XLXI_4_1" *) 
+   FJKC_HXILINX_Counter1to6  XLXI_4 (.C(CLK_IN), 
+                                    .CLR(Clearasdasd), 
+                                    .J(XLXN_96), 
+                                    .K(XLXN_95), 
+                                    .Q(D3_DUMMY));
+   VCC  XLXI_12 (.P(XLXN_61));
+   AND2  XLXI_13 (.I0(XLXN_61), 
+                 .I1(XLXN_61), 
+                 .O(XLXN_59));
+   AND2  XLXI_14 (.I0(XLXN_73), 
+                 .I1(XLXN_72), 
+                 .O(XLXN_62));
+   AND2  XLXI_15 (.I0(D0_DUMMY), 
+                 .I1(XLXN_86), 
+                 .O(XLXN_74));
+   AND2  XLXI_17 (.I0(D1_DUMMY), 
+                 .I1(D0_DUMMY), 
+                 .O(XLXN_90));
+   INV  XLXI_19 (.I(D3_DUMMY), 
+                .O(XLXN_86));
+   OR2  XLXI_20 (.I0(XLXN_62), 
+                .I1(XLXN_86), 
+                .O(XLXN_63));
+   INV  XLXI_21 (.I(D2_DUMMY), 
+                .O(XLXN_73));
+   INV  XLXI_22 (.I(D1_DUMMY), 
+                .O(XLXN_72));
+   OR2  XLXI_23 (.I0(D0_DUMMY), 
+                .I1(D3_DUMMY), 
+                .O(XLXN_84));
+   AND3  XLXI_24 (.I0(D0_DUMMY), 
+                 .I1(D1_DUMMY), 
+                 .I2(XLXN_86), 
+                 .O(XLXN_121));
+   OR2  XLXI_25 (.I0(D3_DUMMY), 
+                .I1(XLXN_90), 
+                .O(XLXN_88));
+   AND3  XLXI_26 (.I0(D2_DUMMY), 
+                 .I1(D1_DUMMY), 
+                 .I2(D0_DUMMY), 
+                 .O(XLXN_96));
+   OR3  XLXI_27 (.I0(D1_DUMMY), 
+                .I1(D2_DUMMY), 
+                .I2(D0_DUMMY), 
+                .O(XLXN_95));
+   OR2  XLXI_124 (.I0(XLXN_156), 
+                 .I1(Clear), 
+                 .O(Clearasdasd));
+   AND3  XLXI_126 (.I0(D0_DUMMY), 
+                  .I1(D1_DUMMY), 
+                  .I2(D2_DUMMY), 
+                  .O(XLXN_156));
+endmodule

@@ -1,0 +1,5 @@
+MODULE test_fpga2
+	SUBMODULE Clock_Divider
+		INSTANCE XLXI_6
+	SUBMODULE bcd2sge
+		INSTANCE XLXI_130

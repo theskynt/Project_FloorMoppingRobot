@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym Counter1to6 {E:/Xilinx Project/Lab6/Counter1to6.sch} {E:/Xilinx Project/fpga_test/Counter1to6.sym} 

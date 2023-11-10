@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym sw {E:/Xilinx Project/fpga_test/sw.sch} {E:/Xilinx Project/fpga_test/sw.sym} 

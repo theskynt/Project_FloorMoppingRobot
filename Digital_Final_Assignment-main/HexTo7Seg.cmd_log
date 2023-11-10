@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym HexTo7Seg {E:/Xilinx Project/Lab7/HexTo7Seg.sch} {E:/Xilinx Project/fpga_test/HexTo7Seg.sym} 

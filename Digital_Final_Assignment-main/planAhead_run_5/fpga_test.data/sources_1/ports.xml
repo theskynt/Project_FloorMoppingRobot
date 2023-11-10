@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="Clear" Dir="IN"/>
+		<Port Id="K1_Pin13_P7" Dir="IN"/>
+		<Port Id="K1_Pin15_P5" Dir="IN"/>
+		<Port Id="K2_Pin13_P8" Dir="IN"/>
+		<Port Id="K2_Pin15_P6" Dir="IN"/>
+		<Port Id="P123" Dir="IN"/>
+		<Port Id="a" Dir="OUT"/>
+		<Port Id="b" Dir="OUT"/>
+		<Port Id="c" Dir="OUT"/>
+		<Port Id="com0" Dir="OUT"/>
+		<Port Id="d" Dir="OUT"/>
+		<Port Id="e" Dir="OUT"/>
+		<Port Id="f" Dir="OUT"/>
+		<Port Id="g" Dir="OUT"/>
+		<Port Id="K3_Pin13_P127" Dir="OUT"/>
+		<Port Id="K3_Pin15_P124" Dir="OUT"/>
+		<Port Id="K4_Pin13_P131" Dir="OUT"/>
+		<Port Id="K4_Pin15_P126" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

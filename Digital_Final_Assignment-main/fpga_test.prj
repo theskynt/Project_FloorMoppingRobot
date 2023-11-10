@@ -1,0 +1,7 @@
+verilog work "Counter0to9.vf"
+verilog work "Counter0to3.vf"
+verilog work "bcd2sge.vf"
+verilog work "Clock_Divider.vf"
+verilog work "fpga_test.vf"
+verilog work "HexTo7Seg.vf"
+verilog work "Counter1to6.vf"

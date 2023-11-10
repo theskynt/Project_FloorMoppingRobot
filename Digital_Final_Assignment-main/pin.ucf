@@ -1,0 +1,21 @@
+NET "P123" LOC = P123;
+NET "a" LOC = P41;
+NET "b" LOC = P40;
+NET "c" LOC = P35;
+NET "d" LOC = P34;
+NET "e" LOC = P32;
+NET "f" LOC = P29;
+NET "g" LOC = P27;
+NET "K1_Pin15_P5" LOC = P5;
+NET "K1_Pin13_P7" LOC = P7;
+NET "K2_Pin15_P6" LOC = P6;
+NET "K2_Pin13_P8" LOC = P8;
+NET "com0" LOC = P44;
+NET "Clear" LOC = P46;
+
+# PlanAhead Generated physical constraints 
+
+NET "K3_Pin13_P127" LOC = P127;
+NET "K3_Pin15_P124" LOC = P124;
+NET "K4_Pin13_P131" LOC = P131;
+NET "K4_Pin15_P126" LOC = P126;

@@ -1,0 +1,698 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : fpga_test.vf
+// /___/   /\     Timestamp : 12/14/2021 18:41:18
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "E:/Xilinx Project/FPGA_SENSOR/fpga_test.vf" -w "E:/Xilinx Project/FPGA_SENSOR/fpga_test.sch"
+//Design Name: fpga_test
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_fpga_test(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_fpga_test(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Counter0to3_MUSER_fpga_test(CLK_IN, 
+                                   Y0, 
+                                   Y1);
+
+    input CLK_IN;
+   output Y0;
+   output Y1;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   wire Y0_DUMMY;
+   wire Y1_DUMMY;
+   
+   assign Y0 = Y0_DUMMY;
+   assign Y1 = Y1_DUMMY;
+   FD #( .INIT(1'b0) ) XLXI_2 (.C(CLK_IN), 
+              .D(XLXN_3), 
+              .Q(Y0_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_3 (.C(XLXN_3), 
+              .D(XLXN_4), 
+              .Q(Y1_DUMMY));
+   INV  XLXI_4 (.I(Y0_DUMMY), 
+               .O(XLXN_3));
+   INV  XLXI_5 (.I(Y1_DUMMY), 
+               .O(XLXN_4));
+endmodule
+`timescale 1ns / 1ps
+
+module Counter0to9_MUSER_fpga_test(CLK_IN, 
+                                   D0, 
+                                   D1, 
+                                   D2, 
+                                   D3);
+
+    input CLK_IN;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   
+   wire Qb_bar;
+   wire Qc_bar;
+   wire Qd_bar;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_16;
+   wire XLXN_18;
+   wire XLXN_26;
+   wire XLXN_28;
+   wire XLXN_30;
+   wire XLXN_34;
+   wire XLXN_35;
+   wire XLXN_39;
+   wire XLXN_44;
+   wire XLXN_47;
+   wire D0_DUMMY;
+   wire D1_DUMMY;
+   wire D2_DUMMY;
+   wire D3_DUMMY;
+   
+   assign D0 = D0_DUMMY;
+   assign D1 = D1_DUMMY;
+   assign D2 = D2_DUMMY;
+   assign D3 = D3_DUMMY;
+   (* HU_SET = "XLXI_1_0" *) 
+   FJKC_HXILINX_fpga_test  XLXI_1 (.C(CLK_IN), 
+                                  .CLR(XLXN_47), 
+                                  .J(XLXN_14), 
+                                  .K(XLXN_16), 
+                                  .Q(D0_DUMMY));
+   (* HU_SET = "XLXI_2_1" *) 
+   FJKC_HXILINX_fpga_test  XLXI_2 (.C(CLK_IN), 
+                                  .CLR(XLXN_47), 
+                                  .J(XLXN_26), 
+                                  .K(XLXN_28), 
+                                  .Q(D1_DUMMY));
+   (* HU_SET = "XLXI_3_2" *) 
+   FJKC_HXILINX_fpga_test  XLXI_3 (.C(CLK_IN), 
+                                  .CLR(XLXN_47), 
+                                  .J(XLXN_30), 
+                                  .K(XLXN_34), 
+                                  .Q(D2_DUMMY));
+   (* HU_SET = "XLXI_10_3" *) 
+   FJKC_HXILINX_fpga_test  XLXI_10 (.C(CLK_IN), 
+                                   .CLR(XLXN_47), 
+                                   .J(XLXN_39), 
+                                   .K(XLXN_44), 
+                                   .Q(D3_DUMMY));
+   OR2  XLXI_11 (.I0(XLXN_15), 
+                .I1(Qd_bar), 
+                .O(XLXN_14));
+   AND2  XLXI_12 (.I0(Qb_bar), 
+                 .I1(Qc_bar), 
+                 .O(XLXN_15));
+   AND2  XLXI_17 (.I0(XLXN_18), 
+                 .I1(XLXN_18), 
+                 .O(XLXN_16));
+   VCC  XLXI_18 (.P(XLXN_18));
+   INV  XLXI_19 (.I(D3_DUMMY), 
+                .O(Qd_bar));
+   INV  XLXI_20 (.I(D2_DUMMY), 
+                .O(Qc_bar));
+   INV  XLXI_21 (.I(D1_DUMMY), 
+                .O(Qb_bar));
+   AND2  XLXI_23 (.I0(D0_DUMMY), 
+                 .I1(Qd_bar), 
+                 .O(XLXN_26));
+   OR2  XLXI_24 (.I0(D0_DUMMY), 
+                .I1(D3_DUMMY), 
+                .O(XLXN_28));
+   AND3  XLXI_25 (.I0(D1_DUMMY), 
+                 .I1(D0_DUMMY), 
+                 .I2(Qd_bar), 
+                 .O(XLXN_30));
+   OR2  XLXI_26 (.I0(XLXN_35), 
+                .I1(D3_DUMMY), 
+                .O(XLXN_34));
+   AND2  XLXI_27 (.I0(D1_DUMMY), 
+                 .I1(D0_DUMMY), 
+                 .O(XLXN_35));
+   AND3  XLXI_28 (.I0(D2_DUMMY), 
+                 .I1(D1_DUMMY), 
+                 .I2(D0_DUMMY), 
+                 .O(XLXN_39));
+   OR3  XLXI_31 (.I0(D2_DUMMY), 
+                .I1(D1_DUMMY), 
+                .I2(D0_DUMMY), 
+                .O(XLXN_44));
+   GND  XLXI_32 (.G(XLXN_47));
+endmodule
+`timescale 1ns / 1ps
+
+module Clock_Divider_MUSER_fpga_test(OSC_IN, 
+                                     CLK_TEST, 
+                                     CLK_Timer, 
+                                     CLK_1Hz, 
+                                     CLK_2Hz, 
+                                     CLK_20Hz, 
+                                     CLK_500Hz);
+
+    input OSC_IN;
+   output CLK_TEST;
+   output CLK_Timer;
+   output CLK_1Hz;
+   output CLK_2Hz;
+   output CLK_20Hz;
+   output CLK_500Hz;
+   
+   wire XLXN_2;
+   wire XLXN_5;
+   wire XLXN_10;
+   wire XLXN_15;
+   wire XLXN_16;
+   wire XLXN_17;
+   wire XLXN_18;
+   wire XLXN_19;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_26;
+   wire XLXN_27;
+   wire XLXN_28;
+   wire XLXN_36;
+   wire XLXN_37;
+   wire XLXN_39;
+   wire XLXN_43;
+   wire XLXN_45;
+   wire XLXN_47;
+   wire XLXN_49;
+   wire XLXN_88;
+   wire XLXN_89;
+   wire XLXN_94;
+   wire CLK_Timer_DUMMY;
+   wire CLK_1Hz_DUMMY;
+   wire CLK_20Hz_DUMMY;
+   wire CLK_500Hz_DUMMY;
+   wire CLK_2Hz_DUMMY;
+   
+   assign CLK_Timer = CLK_Timer_DUMMY;
+   assign CLK_1Hz = CLK_1Hz_DUMMY;
+   assign CLK_2Hz = CLK_2Hz_DUMMY;
+   assign CLK_20Hz = CLK_20Hz_DUMMY;
+   assign CLK_500Hz = CLK_500Hz_DUMMY;
+   Counter0to9_MUSER_fpga_test  XLXI_1 (.CLK_IN(OSC_IN), 
+                                       .D0(XLXN_15), 
+                                       .D1(), 
+                                       .D2(), 
+                                       .D3(XLXN_16));
+   Counter0to9_MUSER_fpga_test  XLXI_2 (.CLK_IN(XLXN_2), 
+                                       .D0(XLXN_17), 
+                                       .D1(), 
+                                       .D2(), 
+                                       .D3(XLXN_18));
+   NAND2  XLXI_7 (.I0(XLXN_16), 
+                 .I1(XLXN_15), 
+                 .O(XLXN_2));
+   Counter0to9_MUSER_fpga_test  XLXI_18 (.CLK_IN(XLXN_5), 
+                                        .D0(XLXN_23), 
+                                        .D1(), 
+                                        .D2(), 
+                                        .D3(XLXN_24));
+   NAND2  XLXI_19 (.I0(XLXN_18), 
+                  .I1(XLXN_17), 
+                  .O(XLXN_5));
+   Counter0to9_MUSER_fpga_test  XLXI_20 (.CLK_IN(XLXN_26), 
+                                        .D0(XLXN_19), 
+                                        .D1(), 
+                                        .D2(), 
+                                        .D3(XLXN_20));
+   NAND2  XLXI_21 (.I0(XLXN_24), 
+                  .I1(XLXN_23), 
+                  .O(XLXN_26));
+   Counter0to9_MUSER_fpga_test  XLXI_26 (.CLK_IN(XLXN_49), 
+                                        .D0(XLXN_21), 
+                                        .D1(), 
+                                        .D2(), 
+                                        .D3(XLXN_22));
+   NAND2  XLXI_27 (.I0(XLXN_20), 
+                  .I1(XLXN_19), 
+                  .O(XLXN_49));
+   Counter0to9_MUSER_fpga_test  XLXI_28 (.CLK_IN(XLXN_10), 
+                                        .D0(XLXN_27), 
+                                        .D1(), 
+                                        .D2(), 
+                                        .D3(XLXN_28));
+   NAND2  XLXI_29 (.I0(XLXN_22), 
+                  .I1(XLXN_21), 
+                  .O(XLXN_10));
+   NAND2  XLXI_38 (.I0(XLXN_28), 
+                  .I1(XLXN_27), 
+                  .O(CLK_20Hz_DUMMY));
+   Counter0to9_MUSER_fpga_test  XLXI_39 (.CLK_IN(CLK_20Hz_DUMMY), 
+                                        .D0(XLXN_36), 
+                                        .D1(), 
+                                        .D2(), 
+                                        .D3(XLXN_37));
+   NAND2  XLXI_40 (.I0(XLXN_37), 
+                  .I1(XLXN_36), 
+                  .O(CLK_2Hz_DUMMY));
+   FD #( .INIT(1'b0) ) XLXI_41 (.C(CLK_2Hz_DUMMY), 
+               .D(XLXN_39), 
+               .Q(CLK_1Hz_DUMMY));
+   INV  XLXI_42 (.I(CLK_1Hz_DUMMY), 
+                .O(XLXN_39));
+   FD #( .INIT(1'b0) ) XLXI_43 (.C(XLXN_49), 
+               .D(XLXN_47), 
+               .Q(XLXN_43));
+   INV  XLXI_44 (.I(XLXN_43), 
+                .O(XLXN_47));
+   FD #( .INIT(1'b0) ) XLXI_45 (.C(XLXN_47), 
+               .D(XLXN_45), 
+               .Q(CLK_500Hz_DUMMY));
+   INV  XLXI_46 (.I(CLK_500Hz_DUMMY), 
+                .O(XLXN_45));
+   Counter0to3_MUSER_fpga_test  XLXI_70 (.CLK_IN(CLK_2Hz_DUMMY), 
+                                        .Y0(XLXN_89), 
+                                        .Y1(XLXN_88));
+   NAND2  XLXI_71 (.I0(XLXN_89), 
+                  .I1(XLXN_88), 
+                  .O(CLK_TEST));
+   FD #( .INIT(1'b0) ) XLXI_74 (.C(CLK_1Hz_DUMMY), 
+               .D(XLXN_94), 
+               .Q(CLK_Timer_DUMMY));
+   INV  XLXI_75 (.I(CLK_Timer_DUMMY), 
+                .O(XLXN_94));
+endmodule
+`timescale 1ns / 1ps
+
+module fpga_test(Clear, 
+                 K1_Pin13_P7, 
+                 K1_Pin15_P5, 
+                 K2_Pin13_P8, 
+                 K2_Pin15_P6, 
+                 P123, 
+                 a, 
+                 b, 
+                 c, 
+                 com0, 
+                 d, 
+                 e, 
+                 f, 
+                 g, 
+                 K3_Pin13_P127, 
+                 K3_Pin15_P124, 
+                 K4_Pin13_P131, 
+                 K4_Pin15_P126);
+
+    input Clear;
+    input K1_Pin13_P7;
+    input K1_Pin15_P5;
+    input K2_Pin13_P8;
+    input K2_Pin15_P6;
+    input P123;
+   output a;
+   output b;
+   output c;
+   output com0;
+   output d;
+   output e;
+   output f;
+   output g;
+   output K3_Pin13_P127;
+   output K3_Pin15_P124;
+   output K4_Pin13_P131;
+   output K4_Pin15_P126;
+   
+   wire Clearasdasd;
+   wire CLK_IN;
+   wire D0;
+   wire D3;
+   wire LED_01;
+   wire LED_02;
+   wire LED_03;
+   wire LED_04;
+   wire LED1;
+   wire LED2;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_45;
+   wire XLXN_84;
+   wire XLXN_86;
+   wire XLXN_88;
+   wire XLXN_90;
+   wire XLXN_95;
+   wire XLXN_96;
+   wire XLXN_120;
+   wire XLXN_121;
+   wire XLXN_155;
+   wire XLXN_156;
+   wire XLXN_222;
+   wire XLXN_296;
+   wire XLXN_297;
+   wire XLXN_348;
+   wire XLXN_349;
+   wire XLXN_350;
+   wire XLXN_354;
+   wire XLXN_355;
+   wire XLXN_356;
+   wire XLXN_359;
+   wire XLXN_360;
+   wire XLXN_361;
+   wire XLXN_362;
+   wire XLXN_363;
+   wire XLXN_364;
+   wire XLXN_365;
+   wire XLXN_481;
+   wire XLXN_491;
+   wire XLXN_565;
+   wire XLXN_567;
+   wire XLXN_576;
+   wire XLXN_587;
+   wire XLXN_614;
+   wire XLXN_621;
+   wire XLXN_622;
+   wire XLXN_658;
+   wire XLXN_663;
+   wire XLXN_668;
+   wire XLXN_671;
+   wire XLXN_672;
+   wire XLXN_675;
+   wire XLXN_679;
+   wire XLXN_685;
+   wire XLXN_686;
+   wire XLXN_699;
+   wire XLXN_708;
+   wire XLXN_709;
+   wire XLXN_710;
+   wire XLXN_711;
+   wire XLXN_714;
+   wire XLXN_717;
+   
+   AND2  XLXI_1 (.I0(XLXN_576), 
+                .I1(XLXN_587), 
+                .O(XLXN_155));
+   AND2  XLXI_2 (.I0(XLXN_481), 
+                .I1(XLXN_481), 
+                .O(XLXN_711));
+   GND  XLXI_3 (.G(XLXN_120));
+   (* HU_SET = "XLXI_4_6" *) 
+   FJKC_HXILINX_fpga_test  XLXI_4 (.C(CLK_IN), 
+                                  .CLR(Clearasdasd), 
+                                  .J(XLXN_96), 
+                                  .K(XLXN_95), 
+                                  .Q(D3));
+   Clock_Divider_MUSER_fpga_test  XLXI_6 (.OSC_IN(P123), 
+                                         .CLK_TEST(), 
+                                         .CLK_Timer(XLXN_296), 
+                                         .CLK_1Hz(), 
+                                         .CLK_2Hz(), 
+                                         .CLK_20Hz(XLXN_717), 
+                                         .CLK_500Hz());
+   VCC  XLXI_7 (.P(XLXN_481));
+   (* HU_SET = "XLXI_9_4" *) 
+   FTC_HXILINX_fpga_test  XLXI_9 (.C(XLXN_614), 
+                                 .CLR(XLXN_714), 
+                                 .T(XLXN_711), 
+                                 .Q(XLXN_45));
+   VCC  XLXI_11 (.P(XLXN_13));
+   AND2  XLXI_13 (.I0(XLXN_22), 
+                 .I1(XLXN_222), 
+                 .O(XLXN_14));
+   (* HU_SET = "XLXI_14_5" *) 
+   FJKC_HXILINX_fpga_test  XLXI_14 (.C(CLK_IN), 
+                                   .CLR(Clearasdasd), 
+                                   .J(XLXN_121), 
+                                   .K(XLXN_88), 
+                                   .Q(LED1));
+   AND2  XLXI_15 (.I0(D0), 
+                 .I1(XLXN_86), 
+                 .O(XLXN_23));
+   OR2  XLXI_17 (.I0(D0), 
+                .I1(D3), 
+                .O(XLXN_84));
+   INV  XLXI_19 (.I(D3), 
+                .O(XLXN_86));
+   AND3  XLXI_23 (.I0(LED1), 
+                 .I1(LED2), 
+                 .I2(D0), 
+                 .O(XLXN_96));
+   OR3  XLXI_24 (.I0(LED2), 
+                .I1(LED1), 
+                .I2(D0), 
+                .O(XLXN_95));
+   (* HU_SET = "XLXI_26_7" *) 
+   FJKC_HXILINX_fpga_test  XLXI_26 (.C(CLK_IN), 
+                                   .CLR(Clearasdasd), 
+                                   .J(XLXN_491), 
+                                   .K(XLXN_12), 
+                                   .Q(D0));
+   (* HU_SET = "XLXI_27_8" *) 
+   FJKC_HXILINX_fpga_test  XLXI_27 (.C(CLK_IN), 
+                                   .CLR(Clearasdasd), 
+                                   .J(XLXN_23), 
+                                   .K(XLXN_84), 
+                                   .Q(LED2));
+   AND2  XLXI_31 (.I0(XLXN_297), 
+                 .I1(XLXN_45), 
+                 .O(CLK_IN));
+   AND2  XLXI_48 (.I0(XLXN_120), 
+                 .I1(XLXN_120), 
+                 .O(XLXN_714));
+   AND2  XLXI_86 (.I0(XLXN_13), 
+                 .I1(XLXN_13), 
+                 .O(XLXN_12));
+   OR2  XLXI_88 (.I0(XLXN_14), 
+                .I1(XLXN_86), 
+                .O(XLXN_491));
+   INV  XLXI_91 (.I(LED2), 
+                .O(XLXN_222));
+   AND3  XLXI_94 (.I0(D0), 
+                 .I1(LED2), 
+                 .I2(XLXN_86), 
+                 .O(XLXN_121));
+   OR2  XLXI_95 (.I0(D3), 
+                .I1(XLXN_90), 
+                .O(XLXN_88));
+   AND2  XLXI_96 (.I0(LED2), 
+                 .I1(D0), 
+                 .O(XLXN_90));
+   INV  XLXI_97 (.I(LED1), 
+                .O(XLXN_22));
+   OR2  XLXI_124 (.I0(XLXN_156), 
+                 .I1(Clear), 
+                 .O(Clearasdasd));
+   AND3  XLXI_126 (.I0(D0), 
+                  .I1(LED2), 
+                  .I2(LED1), 
+                  .O(XLXN_156));
+   GND  XLXI_129 (.G(com0));
+   bcd2sge  XLXI_130 (.A(D3), 
+                     .B(LED1), 
+                     .C(LED2), 
+                     .D(D0), 
+                     .a_output(a), 
+                     .b_output(b), 
+                     .c_output(c), 
+                     .d_output(d), 
+                     .e_output(e), 
+                     .f_output(f), 
+                     .g_output(g));
+   (* HU_SET = "XLXI_137_9" *) 
+   FTC_HXILINX_fpga_test  XLXI_137 (.C(XLXN_296), 
+                                   .CLR(XLXN_714), 
+                                   .T(XLXN_711), 
+                                   .Q(XLXN_297));
+   AND4  XLXI_160 (.I0(D0), 
+                  .I1(XLXN_710), 
+                  .I2(XLXN_349), 
+                  .I3(XLXN_348), 
+                  .O(LED_01));
+   AND4  XLXI_161 (.I0(D0), 
+                  .I1(LED2), 
+                  .I2(XLXN_567), 
+                  .I3(XLXN_350), 
+                  .O(XLXN_565));
+   INV  XLXI_163 (.I(D3), 
+                 .O(XLXN_348));
+   INV  XLXI_164 (.I(LED1), 
+                 .O(XLXN_349));
+   INV  XLXI_165 (.I(D3), 
+                 .O(XLXN_350));
+   AND4  XLXI_167 (.I0(XLXN_362), 
+                  .I1(XLXN_361), 
+                  .I2(XLXN_359), 
+                  .I3(XLXN_360), 
+                  .O(LED_03));
+   INV  XLXI_168 (.I(D3), 
+                 .O(XLXN_360));
+   INV  XLXI_169 (.I(LED1), 
+                 .O(XLXN_359));
+   INV  XLXI_170 (.I(LED2), 
+                 .O(XLXN_361));
+   INV  XLXI_171 (.I(D0), 
+                 .O(XLXN_362));
+   OR2  XLXI_272 (.I0(LED_03), 
+                 .I1(XLXN_565), 
+                 .O(LED_02));
+   OR2  XLXI_273 (.I0(LED_01), 
+                 .I1(XLXN_565), 
+                 .O(LED_04));
+   INV  XLXI_275 (.I(LED1), 
+                 .O(XLXN_567));
+   OR2  XLXI_277 (.I0(XLXN_668), 
+                 .I1(XLXN_675), 
+                 .O(XLXN_679));
+   VCC  XLXI_279 (.P(XLXN_587));
+   (* HU_SET = "XLXI_281_10" *) 
+   FJKC_HXILINX_fpga_test  XLXI_281 (.C(XLXN_717), 
+                                    .CLR(XLXN_714), 
+                                    .J(K1_Pin15_P5), 
+                                    .K(K1_Pin13_P7), 
+                                    .Q(XLXN_576));
+   OR3  XLXI_287 (.I0(Clearasdasd), 
+                 .I1(XLXN_155), 
+                 .I2(XLXN_622), 
+                 .O(XLXN_614));
+   (* HU_SET = "XLXI_288_11" *) 
+   FJKC_HXILINX_fpga_test  XLXI_288 (.C(XLXN_717), 
+                                    .CLR(XLXN_714), 
+                                    .J(K2_Pin15_P6), 
+                                    .K(K2_Pin13_P8), 
+                                    .Q(XLXN_621));
+   AND2  XLXI_289 (.I0(XLXN_621), 
+                  .I1(XLXN_699), 
+                  .O(XLXN_622));
+   AND4  XLXI_304 (.I0(D0), 
+                  .I1(XLXN_709), 
+                  .I2(XLXN_355), 
+                  .I3(XLXN_354), 
+                  .O(XLXN_663));
+   AND4  XLXI_305 (.I0(D0), 
+                  .I1(LED2), 
+                  .I2(XLXN_708), 
+                  .I3(XLXN_356), 
+                  .O(XLXN_668));
+   INV  XLXI_306 (.I(D3), 
+                 .O(XLXN_354));
+   INV  XLXI_307 (.I(LED1), 
+                 .O(XLXN_355));
+   INV  XLXI_308 (.I(D3), 
+                 .O(XLXN_356));
+   AND4  XLXI_310 (.I0(XLXN_365), 
+                  .I1(XLXN_364), 
+                  .I2(XLXN_658), 
+                  .I3(XLXN_363), 
+                  .O(XLXN_675));
+   INV  XLXI_311 (.I(LED1), 
+                 .O(XLXN_658));
+   INV  XLXI_312 (.I(D3), 
+                 .O(XLXN_363));
+   INV  XLXI_313 (.I(LED2), 
+                 .O(XLXN_364));
+   INV  XLXI_314 (.I(D0), 
+                 .O(XLXN_365));
+   OR2  XLXI_315 (.I0(XLXN_668), 
+                 .I1(XLXN_663), 
+                 .O(XLXN_671));
+   MUXF5  XLXI_318 (.I0(LED_01), 
+                   .I1(XLXN_671), 
+                   .S(XLXN_672), 
+                   .O(K3_Pin15_P124));
+   MUXF5  XLXI_322 (.I0(LED_02), 
+                   .I1(XLXN_675), 
+                   .S(XLXN_672), 
+                   .O(K3_Pin13_P127));
+   MUXF5  XLXI_323 (.I0(LED_03), 
+                   .I1(XLXN_679), 
+                   .S(XLXN_672), 
+                   .O(K4_Pin15_P126));
+   MUXF5  XLXI_324 (.I0(LED_04), 
+                   .I1(XLXN_663), 
+                   .S(XLXN_672), 
+                   .O(K4_Pin13_P131));
+   (* HU_SET = "XLXI_325_12" *) 
+   FTC_HXILINX_fpga_test  XLXI_325 (.C(XLXN_622), 
+                                   .CLR(Clearasdasd), 
+                                   .T(XLXN_685), 
+                                   .Q(XLXN_672));
+   AND2  XLXI_326 (.I0(XLXN_686), 
+                  .I1(XLXN_686), 
+                  .O(XLXN_685));
+   VCC  XLXI_327 (.P(XLXN_686));
+   VCC  XLXI_328 (.P(XLXN_699));
+   INV  XLXI_331 (.I(LED2), 
+                 .O(XLXN_709));
+   INV  XLXI_332 (.I(LED1), 
+                 .O(XLXN_708));
+   INV  XLXI_334 (.I(LED2), 
+                 .O(XLXN_710));
+endmodule

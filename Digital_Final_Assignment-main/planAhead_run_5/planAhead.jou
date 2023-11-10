@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Tue Dec 14 15:49:38 2021
+# Process ID: 640
+# Log file: E:/Xilinx Project/FPGA_SENSOR/planAhead_run_5/planAhead.log
+# Journal file: E:/Xilinx Project/FPGA_SENSOR/planAhead_run_5/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {E:/Xilinx Project/FPGA_SENSOR/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P127 [get_ports K3_Pin13_P127]
+endgroup
+startgroup
+set_property package_pin P124 [get_ports K3_Pin15_P124]
+endgroup
+startgroup
+set_property package_pin P131 [get_ports K4_Pin13_P131]
+endgroup
+startgroup
+set_property package_pin P126 [get_ports K4_Pin15_P126]
+endgroup
+save_constraints

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym bcd2sge {E:/Xilinx Project/seg7/bcd2sge.sch} {E:/Xilinx Project/fpga_test/bcd2sge.sym} 
